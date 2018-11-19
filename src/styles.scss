@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@font-face {
+  font-family: 'Architect';
+  src: url('./assets/fonts/architect.ttf');
+}
+
+@font-face {
+  font-family: 'TecnicoBold';
+  src: url('./assets/fonts/tecnico_bold.ttf');
+}
+
+
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+
+div:active,
+div:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
