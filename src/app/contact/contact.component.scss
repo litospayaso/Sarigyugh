@@ -1,0 +1,23 @@
+.contact-data {
+  display: flex;
+  flex-direction: column;
+
+  .contact-item {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    // width: 200px;
+
+    .contact-description {
+      font-family: TecnicoBold;
+      text-align: right;
+      width: 90px;
+    }
+
+    .contact-value {
+      font-family: TecnicoRegular;
+      text-align: left;
+      padding-left: 15px
+    }
+  }
+}

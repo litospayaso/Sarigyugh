@@ -2,9 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { HomeComponent } from './home/home.component';
@@ -14,6 +11,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +21,12 @@ import { ContactComponent } from './contact/contact.component';
     ProjectsComponent,
     ExperienceComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    DetailComponent
   ],
   imports: [
     RouterModule,
     BrowserModule,
-    MatToolbarModule,
-    BrowserAnimationsModule,
     Routing
   ],
   providers: [],
