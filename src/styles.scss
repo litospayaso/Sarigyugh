@@ -11,10 +11,22 @@
   src: url('./assets/fonts/tecnico_bold.ttf');
 }
 
+@font-face {
+  font-family: 'TecnicoRegular';
+  src: url('./assets/fonts/tecnico_regular.ttf');
+}
+
+
 
 body {
   margin: 0;
   background-color: #fafafa;
+}
+
+h1 {
+  font-family: TecnicoBold;
+  font-size: 3rem;
+  line-height: 1;
 }
 
 div:active,
