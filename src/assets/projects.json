@@ -1,0 +1,97 @@
+[{
+    "name": {
+      "en": "Sada Market"
+    },
+    "description": {
+      "en": "Project to create a Market in Sada"
+    },
+    "pictures": [
+      "assets/pfc_emplazamiento.jpg",
+      "assets/pfc_seccion.jpg",
+      "assets/pfc_situacion.jpg"
+    ]
+  },
+  {
+    "name": {
+      "en": "Isover Saint Gobain"
+    },
+    "description": {
+      "en": "Project to create a Market in Saint Gobain"
+    },
+    "pictures": [
+      "assets/isover_seccion.jpg"
+    ]
+  },
+  {
+    "name": {
+      "en": "Stiches"
+    },
+    "description": {
+      "en": "Project to create a Market in Stiches"
+    },
+    "pictures": [
+      "assets/stiches_china.jpg",
+      "assets/stiches_newyork.jpg",
+      "assets/stiches_esquemas.jpg"
+    ]
+  },
+  {
+    "name": {
+      "en": "Scteelcase Competition"
+    },
+    "description": {
+      "en": "Competition in Steelcase"
+    },
+    "pictures": [
+      "assets/steelcase_exterior.jpg",
+      "assets/steelcase_interior.jpg"
+    ]
+  },
+  {
+    "name": {
+      "en": "Metropolitan lung of the east"
+    },
+    "description": {
+      "en": "Creating a new lung for México"
+    },
+    "pictures": [
+      "assets/mexico_central.jpg"
+    ]
+  },
+  {
+    "name": {
+      "en": "Emalcsa"
+    },
+    "description": {
+      "en": "Competition for Emalcsa"
+    },
+    "pictures": [
+      "assets/emalcsa_idea.jpg",
+      "assets/emalcsa_montealto.jpg"
+    ]
+  },
+  {
+    "name": {
+      "en": "Montealto Market"
+    },
+    "description": {
+      "en": "Project to create a market in Montealto"
+    },
+    "pictures": [
+      "assets/montealto_montealto2.jpg",
+      "assets/montealto_montealto.jpg"
+    ]
+  },
+  {
+    "name": {
+      "en": "Iacobus"
+    },
+    "description": {
+      "en": "Iacobus Contest"
+    },
+    "pictures": [
+      "assets/iacobus_seccion1.jpg",
+      "assets/iacobus_seccion2.jpg"
+    ]
+  }
+]
