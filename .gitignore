@@ -40,4 +40,4 @@ package-lock.json
 Thumbs.db
 
 # Store
-upload.js
+connection.json
