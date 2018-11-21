@@ -2,7 +2,7 @@ const Client = require('ssh2-sftp-client');
 const fs = require('fs');
 const sftp = new Client();
 
-let rootFiles = 1;
+let rootFiles = 0;
 let assetsFiles = 0;
 
 const connection = require(`${__dirname}\\connection.json`);
