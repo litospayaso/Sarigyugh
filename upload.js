@@ -1,5 +1,6 @@
 const Client = require('ssh2-sftp-client');
 const fs = require('fs');
+const opn = require('opn');
 const sftp = new Client();
 
 let rootFiles = 0;
@@ -44,6 +45,7 @@ sftp.connect(connection).then(() => {
     sftp.end();
     if (data.length === rootFiles){
         console.log('\x1b[32m%s\x1b[37m%s\x1b[0m','SUCCESS: ', `${rootFiles-1} Updated; ${assetsFiles} asset files`);
+        opn('http://salomevilas.me');
     }else{
         console.log(data);
         console.log('\x1b[31m%s\x1b[37m%s\x1b[0m','ERROR: ','No all data were uploaded');
