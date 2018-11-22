@@ -12,4 +12,11 @@ export class ToolbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  openSidenav() {
+    document.getElementById('sidenavPanel').style.width = '150px';
+  }
+
+  closeSidenav() {
+    document.getElementById('sidenavPanel').style.width = '0px';
+  }
 }

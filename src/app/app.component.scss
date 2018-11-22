@@ -4,6 +4,11 @@
   height: calc(100vh - 68px);
 
   .lateral-panel {
+
+    @media (max-width: 450px) {
+      display: none;
+    }
+
     width: 150px;
     display: flex;
     flex-direction: column;
