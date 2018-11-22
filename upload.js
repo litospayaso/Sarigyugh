@@ -19,11 +19,11 @@ const sendFile = async () => {
     });
     await fs.readdirSync(`${__dirname}\\dist\\salome\\assets`).forEach(async file => {
         assetsFiles += 1;
-        if (file !== 'portfolio.pdf'){
+        // if (file !== 'portfolio.pdf'){
             await sftp.fastPut(`${__dirname}\\dist\\salome\\assets\\${file}`,`/salome/assets/${file}`).catch((err) => {
                 console.log(err, 'catch error');
             });
-        }
+        // }
     });
     return true;
 };
