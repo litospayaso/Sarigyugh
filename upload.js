@@ -1,26 +1,27 @@
 const Client = require('ssh2-sftp-client');
 const fs = require('fs');
 const opn = require('opn');
+const path = require('path');
 const sftp = new Client();
 
 let rootFiles = 0;
 let assetsFiles = 0;
 
-const connection = require(`${__dirname}\\connection.json`);
+const connection = require(path.join(__dirname,'connection.json'));
 
 const sendFile = async () => {
-    await fs.readdirSync(`${__dirname}\\dist\\salome`).forEach(async file => {
+    await fs.readdirSync(path.join(__dirname,'dist','salome')).forEach(async file => {
         rootFiles += 1;
         if (file !== 'assets'){
-            await sftp.fastPut(`${__dirname}\\dist\\salome\\${file}`,`/salome/${file}`).catch((err) => {
+            await sftp.fastPut(path.join(__dirname,'dist','salome',file),`/salome/${file}`).catch((err) => {
                 console.log(err, 'catch error');
             });
         }
     });
-    await fs.readdirSync(`${__dirname}\\dist\\salome\\assets`).forEach(async file => {
+    await fs.readdirSync(path.join(__dirname,'dist','salome','assets')).forEach(async file => {
         assetsFiles += 1;
         if (file !== 'portfolio.pdf'){
-            await sftp.fastPut(`${__dirname}\\dist\\salome\\assets\\${file}`,`/salome/assets/${file}`).catch((err) => {
+            await sftp.fastPut(path.join(__dirname,'dist','salome','assets',file),`/salome/assets/${file}`).catch((err) => {
                 console.log(err, 'catch error');
             });
         }
