@@ -28,6 +28,8 @@
     width: 60%;
     margin: 15px;
     font-family: TecnicoRegularItalic;
+    text-align: justify;
+    text-justify: inter-word;
 
     @media (max-width: 450px) {
       width: 100%;
