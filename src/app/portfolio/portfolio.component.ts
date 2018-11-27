@@ -12,4 +12,13 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
   }
 
+  downloadPdf() {
+    const link = document.createElement('a');
+    link.setAttribute('href', 'assets/portfolio.pdf');
+    link.setAttribute('download', 'Salome_Suarez_Vilas_Portfolio.pdf');
+    link.style.visibility = 'hidden';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
 }
