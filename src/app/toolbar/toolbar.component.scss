@@ -1,45 +1,21 @@
+@import '../../styles.scss';
+
 .header-toolbar {
     display: flex;
     flex-direction: row;
-    background-color: #d8d8d8;
+    background-color: $darkBlue;
     color: white;
     padding: 16px;
     font-size: 30px;
-    font-family: TecnicoBold;
+    font-family: Amatic SC;
 
-  .menu-container {
-    @media (min-width: 450px) {
-      display: none;
+    .router-container{
+      display: flex;
+      flex-direction: row;
+      padding: 0 20px;
+      .route-element{
+        padding: 0 20px;
+      }
     }
-
-    margin-right: 20px;
-    position: relative;
-    top: 4px;
-    cursor: pointer;
-  }
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #fafafa;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
-  font-family: TecnicoBold;
-  font-weight: bold;
-  border-right: solid 3px #f1f1f1;
-
-  .sidenav-item {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    display: block;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-
-}

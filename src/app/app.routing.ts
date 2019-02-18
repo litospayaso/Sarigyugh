@@ -1,9 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ProjectsComponent } from './projects/projects.component';
+import { ProjectComponent } from './project/project.component';
 import { ContactComponent } from './contact/contact.component';
-import { DetailComponent } from './detail/detail.component';
+import { LocationComponent } from './location/location.component';
 
 
 /**
@@ -11,10 +10,9 @@ import { DetailComponent } from './detail/detail.component';
  */
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'projects', component: ProjectsComponent },
+  { path: 'project', component: ProjectComponent },
+  { path: 'location', component: LocationComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'detail/:id', component: DetailComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home' }
 ];
