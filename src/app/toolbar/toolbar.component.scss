@@ -1,21 +1,74 @@
 @import '../../styles.scss';
 
 .header-toolbar {
+  display: flex;
+  flex-direction: row;
+  background-color: $darkBlue;
+  color: white;
+  padding: 16px;
+  font-size: 30px;
+  font-family: Amatic SC;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+
+  .menu-container {
+    @media (min-width: $breakPoint) {
+      display: none;
+    }
+
+    margin-right: 20px;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+
+    svg{
+      fill: white;
+    }
+  }
+
+  .router-container {
+    @media (max-width: $breakPoint) {
+      display: none;
+    }
     display: flex;
     flex-direction: row;
-    background-color: $darkBlue;
-    color: white;
-    padding: 16px;
-    font-size: 30px;
-    font-family: Amatic SC;
+    padding: 0 20px;
+    padding-top: 5px;
+    font-size: 22px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
-    .router-container{
-      display: flex;
-      flex-direction: row;
+    .route-element {
       padding: 0 20px;
-      .route-element{
-        padding: 0 20px;
-      }
     }
+  }
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $darkBlue;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  font-family: Amatic SC;
+  font-weight: bold;
+  color: white;
+  // border-right: solid 3px #f1f1f1;
+
+  .sidenav-item {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+}

@@ -1,11 +1,24 @@
 <div class="header-toolbar" id="headerToolbar">
-  <div class="title-element">
+  <div class="menu-container" (click)="openSidenav()">
+    <svg viewBox="0 0 26 26" width="26px" height="26px">
+      <g>
+        <path d="M 0 4 L 0 6 L 26 6 L 26 4 Z M 0 12 L 0 14 L 26 14 L 26 12 Z M 0 20 L 0 22 L 26 22 L 26 20 Z " />
+      </g>
+    </svg>
+  </div>
+  <div class="title-element" routerLink="/home">
     FCECS_
   </div>
   <div class="router-container">
-    <div class="route-element">Project</div>
-    <div class="route-element">Location</div>
-    <div class="route-element">About us</div>
-    <div class="route-element">Contact</div>
+    <div class="route-element" routerLink="/project">Project</div>
+    <div class="route-element" routerLink="/location">Location</div>
+    <div class="route-element" routerLink="/about">About us</div>
+    <div class="route-element" routerLink="/contact">Contact</div>
   </div>
+</div>
+<div class="sidenav" id="sidenavPanel">
+  <div class="sidenav-item" routerLink="/project">Project</div>
+  <div class="sidenav-item" routerLink="/home">Location</div>
+  <div class="sidenav-item" routerLink="/portfolio">About Us</div>
+  <div class="sidenav-item" routerLink="/contact">Contact</div>
 </div>
