@@ -11,6 +11,7 @@ import { LocationComponent } from './location/location.component';
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'project', component: ProjectComponent },
+  { path: 'project/:elementId', component: ProjectComponent },
   { path: 'location', component: LocationComponent },
   { path: 'contact', component: ContactComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },

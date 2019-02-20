@@ -27,6 +27,10 @@
     }
   }
 
+  .title-element{
+    cursor: pointer;
+  }
+
   .router-container {
     @media (max-width: $breakPoint) {
       display: none;
