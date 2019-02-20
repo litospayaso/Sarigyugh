@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactComponent } from './contact/contact.component';
 import { LocationComponent } from './location/location.component';
+import { AboutComponent } from './about/about.component';
 
 
 /**
@@ -13,6 +14,7 @@ const appRoutes: Routes = [
   { path: 'project', component: ProjectComponent },
   { path: 'project/:elementId', component: ProjectComponent },
   { path: 'location', component: LocationComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home' }

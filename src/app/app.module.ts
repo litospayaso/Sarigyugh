@@ -14,6 +14,7 @@ import { DetailComponent } from './detail/detail.component';
 import { LocationComponent } from './location/location.component';
 import { ProjectComponent } from './project/project.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './footer/footer.component';
     DetailComponent,
     LocationComponent,
     ProjectComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     RouterModule,
