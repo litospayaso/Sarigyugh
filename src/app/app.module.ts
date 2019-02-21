@@ -10,7 +10,6 @@ import { Routing } from './app.routing';
 import { ExperienceComponent } from './experience/experience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
-import { DetailComponent } from './detail/detail.component';
 import { LocationComponent } from './location/location.component';
 import { ProjectComponent } from './project/project.component';
 import { FooterComponent } from './footer/footer.component';
@@ -24,7 +23,6 @@ import { AboutComponent } from './about/about.component';
     ExperienceComponent,
     PortfolioComponent,
     ContactComponent,
-    DetailComponent,
     LocationComponent,
     ProjectComponent,
     FooterComponent,
