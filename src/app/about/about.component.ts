@@ -10,6 +10,7 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    document.getElementById('sidenavPanel').style.width = '0px';
   }
 
 }

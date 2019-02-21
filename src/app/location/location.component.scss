@@ -33,16 +33,32 @@
     padding: 12px;
   }
 
-  .description-container{
-      display: flex;
-      flex-direction: row;
-      margin: 10px 0;
-      .text-container {
-        max-width: calc(100vw - 450px);
-        font-family: Open Sans Condensed;
-        text-align: justify;
-        text-justify: inter-word;
-        padding: 12px;    
+  .description-container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+
+    @media (max-width: $breakPoint) {
+      flex-direction: column;
+    }
+
+    .text-container {
+      max-width: calc(100vw - 450px);
+      font-family: Open Sans Condensed;
+      text-align: justify;
+      text-justify: inter-word;
+      padding: 12px;
+
+      @media (max-width: $breakPoint) {
+        max-width: calc(100vw - 40px);
       }
+    }
+    
+    .map-container{
+      @media (max-width: $breakPoint) {
+        width: calc(100vw - 40px);
+        text-align: center;
+      }
+    }
   }
 }

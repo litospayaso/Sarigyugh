@@ -13,6 +13,7 @@ export class ProjectComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    document.getElementById('sidenavPanel').style.width = '0px';
     this.route.params.subscribe(params => {
         console.log(params.elementId);
         if (params.elementId) {
